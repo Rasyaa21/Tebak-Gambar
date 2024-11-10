@@ -15,5 +15,10 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, howToPlay::class.java)
             this.startActivity(intent)
         }
+
+        binding.btMain.setOnClickListener {
+            val intent = Intent(this, gameActivity::class.java)
+            this.startActivity(intent)
+        }
     }
 }
